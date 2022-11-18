@@ -1,6 +1,6 @@
-CREATE PROCEDURE updatedBrandName(@carId INT, @brandName VARCHAR(50))
+CREATE PROCEDURE updatedEmployeeDetails(@empId INT, @empName VARCHAR(50))
 AS
-UPDATE carBrands SET brandName = @brandName WHERE carId = @carId
+UPDATE employeesTable SET empName = @empName WHERE empId = @empId
 GO
 
-EXEC updatedBrandName 9, 'Hyundai';
+EXEC updatedBrandName 11, 'Othello';
